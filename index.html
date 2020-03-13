@@ -152,7 +152,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
@@ -165,7 +165,7 @@
             });
         });
         $('.back').on('click', function () {
-            url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1`;
+            url = `https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1`;
             load();
             $('.prev').show();
             $('.next').show();
@@ -177,7 +177,7 @@
             var ingridients;
             ingridients = $('input[name="i"]').val();
             console.log(ingridients);
-            url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${ingridients}`;
+            url = `https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${ingridients}`;
             load();
             $('input[name="i"]').val('');
             $('.prev').hide();
@@ -191,7 +191,7 @@
             var title;
             title = $('input[name="q"]').val();
             console.log(title);
-            url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${title}`;
+            url = `https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${title}`;
             load();
             $('input[name="q"]').val('');
             $('.prev').hide();
@@ -200,7 +200,7 @@
         }
         )
         const row = document.querySelector('#cards');
-        let url = 'http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1';
+        let url = 'https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1';
         // let url = '1.JSON';
         let p = 1;
         function load() {
@@ -244,7 +244,7 @@
         load();
         $('.next').on('click', function () {
 
-            url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${++p}`;
+            url = `https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${++p}`;
             load();
 
             console.log(url);
@@ -256,7 +256,7 @@
         $('.prev').on('click', function () {
             p--;
             if (p > 0) {
-                url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${p}`;
+                url = `https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${p}`;
                 load();
 
                 console.log(url);
@@ -268,7 +268,7 @@
         )
         // $('.search-ingridients').on('click', function () {
 
-        // url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${ingredients}`;
+        // url = `https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${ingredients}`;
         // load();
 
         // console.log(url);
@@ -276,7 +276,7 @@
         // )
         // $('.search-ingridients').on('click', function () {
 
-        // url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${ingredients}`;
+        // url = `https://cors-anywhere.herokuapp.com/recipepuppy.com/api/?i=${ingredients}`;
         // load();
 
         // console.log(url);
