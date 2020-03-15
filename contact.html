@@ -8,83 +8,20 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/album.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
 
-    <!-- <header>
-        <div class="top-row">
-          <div class="main">
-            <div class="wrapper">
-              <h1>Cook&Learn <br> Best recipes to learn English</h1>
-             </div>
-          </div>
-        </div>
-         <div class="menu-row">
-          <div class="menu-border">
-            <div class="main">
-              <nav>
-                <ul class="menu">
-                  <li><a class="active" href="index.html">Main</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="courses.html">Courses</a></li>
-                  <li><a href="recipes.html">New Recipes</a></li>
-                  <li><a href="calendar.html">Calendar</a></li>
-                  <li class="last"><a href="contacts.html">Contacts</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div> -->
-    <!-- </header> -->
+
     <header>
-        <!-- <div class="collapse " id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">Add some information about the album below, the author, or any other
-                            background context. Make it a few sentences long so folks can pick up some informative
-                            tidbits. Then, link them off to some social networking sites or contact information.</p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                            <li><a href="#" class="text-white">Like on Facebook</a></li>
-                            <li><a href="#" class="text-white">Email me</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
         <div class="navbar">
             <div class="container">
                 <h1>Cook&Learn <br>Best recipes to learn English </h1>
             </div>
         </div>
-        <!-- <div class="js-sticky">
-			<div class="header-nav">
-				<div class="container-fluid">
-					<div class="fh5co-menu-1">
-						<a href="#" data-nav-section="home">Home</a>
-						<a href="#" data-nav-section="about">About</a>
-						<a href="#" data-nav-section="features">Features</a>
-					</div>
-					<div class="fh5co-logo">
-						<a href="index.html">foodee</a>
-					</div>
-					<div class="fh5co-menu-2">
-						<a href="#" data-nav-section="menu">Menu</a>
-						<a href="#" data-nav-section="events">Events</a>
-						<a href="#" data-nav-section="reservation">Reservation</a>
-					</div>
-				</div>
-				
-			</div>
-        </div> -->
+
         <div class="inner">
             <nav class="nav nav-masthead">
                 <a class="nav-link active" href="index.html">Home</a>
@@ -96,50 +33,76 @@
     </header>
 
     <main role="main">
-
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h1>Album example</h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                </p>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- <div class="album py-5 bg-light"> -->
         <div class="album py-5">
             <div class="container">
 
-                <div class="row" id="cards">
-                    <!-- <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            {% include icons/placeholder.svg width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="Thumbnail" %}
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <div class="row  box-contact" id="cards-contact">
+
+                    <form>
+
+                   
+                        <fieldset>
+                            <h3 class="contact_title">Contact Form</h3>
+                            <div class="row transperent">
+                                <div class="col-6">
+                                    <div class="column-first">
+                                        <div>
+                                            <div class="form-txt">Your Name:</div>
+                                            <label class="name">
+                                                <input class="input-container" type="text" name="name">
+                                                <!-- <span class="error">*This is not a valid phone number.</span> <span
+                                                    class="empty">*This field is required.</span> </label>
+                                            <div class="clear"></div> -->
+                                        </div>
+                                        <div>
+                                            <div class="form-txt">Telephone:</div>
+                                            <label class="phone">
+                                                <input class="input-container" type="tel" name="phone">
+                                                <!-- <span class="error">*This is not a valid phone number.</span> <span
+                                                    class="empty">*This field is required.</span> </label>
+                                            <div class="clear"></div> -->
+                                        </div>
+                                        <div>
+                                            <div class="form-txt">Email:</div>
+                                            <label class="email">
+                                                <input class="input-container" type="email" name="email">
+                                                <!-- <span class="error">*This is not a valid email address.</span> <span
+                                                    class="empty">*This field is required.</span> </label>
+                                            <div class="clear"></div> -->
+                                        </div>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
+                                </div>
+                                <div class="col-6">
+                                    <div class="column-second">
+                                        <div>
+                                            <div>
+                                                <div class="form-txt">Subject:</div>
+                                                <label class="subject">
+                                                    <input class="input-container" type="text" name="subject">
+                                                    <!-- <span class="error">*This is not a valid email address.</span> <span
+                                                        class="empty">*This field is required.</span> </label>
+                                                <div class="clear"></div> -->
+                                            </div>
+                                            <div class="form-txt">Message:</div>
+                                            <label class="message">
+                                                <textarea  name="message"></textarea>
+                                                <!-- <span class="error">*The message is too short.</span> <span class="empty">*This
+                                                    field is required.</span> </label>
+                                            <div class="clear"></div> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    -->
+                        
+
+                        
+                
+                   
+                        <button class="btn btn-success send-btn" type="submit" id="test">Submit form</button>
+                        </fieldset> 
+                    </form>
                 </div>
-                <div class="search col-12">
-                    <button type="button" class="prev btn btn-success btn-lg"><-Prev</button>
-                    <button type="button" class="next btn btn-success btn-lg">Next-></button>
-                </div>
+         
             </div>
         </div>
 
@@ -161,71 +124,103 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
     <script>
-        const row = document.querySelector('#cards');
-        let url = 'http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1';
-        let p = 2;
-        function load() {
+        $('#test').on('click', function (e) {
+            e.preventDefault();
+            console.log('1');
+            var name, phone, email, subject, message_user;
+            name = $('input[name="name"]').val();
+            console.log(name);
+            phone = $('input[name="phone"]').val();
+            console.log(phone);
+            email = $('input[name="email"]').val();
+            console.log(email);
+            subject = $('input[name="subject"]').val();
+            console.log(subject);
+            message_user = $('textarea[name="message"]').val();
+            console.log(message_user);
 
-            $.ajax({
-                url: url,
-                type: 'GET'
-            })
-                .done(function (data) {
-                    //console.log(data);
-                    var res = JSON.parse(data);
-
-                    let template = "";
-
-                    res.results.forEach(item => {
-                        //console.dir(item);
-                        if (item.thumbnail)
-                            template +=
-                                `<div class="col-md-4">                                                                                                                               
-                                 <div class="card mb-4 shadow-sm">    
-                                 <div class="card-body"> 
-                                 <img class="foto" src="${item.thumbnail}"/>                                                                                                                                                    
-                                 <h3 class="card-text">${item.title}</h3>
-                                 <h6 class="ingrid">Ingredients :  ${item.ingredients}</h6>                                                                                                                                                       
-                                 <div class="recept"> 
-                                 <button type="button" class="btn  btn-lg btn-outline-success"> 
-                                 <a class="rec" href="${item.href}" target="_blank">Read more</a></button>                                                                                                                                                            </div>      </div>                </div>                 </div>`;
-                    })
-
-                    row.innerHTML = template;
-
-
-                })
-                .fail(function (error) {
-                    console.log(error);
-                    alert(error);
-                })
-        };
-        load();
-        $('.next').on('click', function () {
-
-            url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${++p}`;
-            load();
-
-            console.log(url);
+            Email.send({
+            Host: "smtp.gmail.com",
+            Username: "oksana.pekach@gmail.com",
+            Password: "vjzgjxnf",
+            To: 'klimenko.a.aleksandra@gmail.com',
+            From: email,
+            Subject: subject,
+            Body: message_user
+        }).then(
+            message => alert(message)
+        );
         }
         )
 
-        $('.prev').on('click', function () {
-            p--;
-            if (p > 0) {
-                url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${p}`;
-                load();
+       
 
-                console.log(url);
 
-            }
-            else p = 0;
-        }
-        )
+        // const row = document.querySelector('#cards');
+        // let url = 'http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1';
+        // let p = 2;
+        // function load() {
+
+        //     $.ajax({
+        //         url: url,
+        //         type: 'GET'
+        //     })
+        //         .done(function (data) {
+        //             //console.log(data);
+        //             var res = JSON.parse(data);
+
+        //             let template = "";
+
+        //             res.results.forEach(item => {
+        //                 //console.dir(item);
+        //                 if (item.thumbnail)
+        //                     template +=
+        //                         `<div class="col-md-4">                                                                                                                               
+        //                          <div class="card mb-4 shadow-sm">    
+        //                          <div class="card-body"> 
+        //                          <img class="foto" src="${item.thumbnail}"/>                                                                                                                                                    
+        //                          <h3 class="card-text">${item.title}</h3>
+        //                          <h6 class="ingrid">Ingredients :  ${item.ingredients}</h6>                                                                                                                                                       
+        //                          <div class="recept"> 
+        //                          <button type="button" class="btn  btn-lg btn-outline-success"> 
+        //                          <a class="rec" href="${item.href}" target="_blank">Read more</a></button>                                                                                                                                                            </div>      </div>                </div>                 </div>`;
+        //             })
+
+        //             row.innerHTML = template;
+
+
+        //         })
+        //         .fail(function (error) {
+        //             console.log(error);
+        //             alert(error);
+        //         })
+        // };
+        // load();
+        // $('.next').on('click', function () {
+
+        //     url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${++p}`;
+        //     load();
+
+        //     console.log(url);
+        // }
+        // )
+
+        // $('.prev').on('click', function () {
+        //     p--;
+        //     if (p > 0) {
+        //         url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${p}`;
+        //         load();
+
+        //         console.log(url);
+
+        //     }
+        //     else p = 0;
+        // }
+        // )
 
 
     </script>
