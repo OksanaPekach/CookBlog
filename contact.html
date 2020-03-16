@@ -15,10 +15,15 @@
 
 
     <header>
-
         <div class="navbar">
             <div class="container">
-                <h1>Cook&Learn <br>Best recipes to learn English </h1>
+                <p>
+                  <img src="./img/logo.png" width="50" height="50" alt="logo"> 
+                </p>
+               <h1>Cook&Learn <br>Best recipes to learn English </h1>
+               <p>
+                <img src="./img/type-3.png" width="80" height="80" alt="logo">
+             </p>
             </div>
         </div>
 
@@ -29,18 +34,14 @@
                 <a class="nav-link active" href="contact.html">Contact</a>
             </nav>
         </div>
-
     </header>
 
     <main role="main">
         <div class="album py-5">
             <div class="container">
-
                 <div class="row  box-contact" id="cards-contact">
-
                     <form class='contact-form'>
-
-                   
+             
                         <fieldset>
                             <h3 class="contact_title">Contact Form</h3>
                             <div class="row transperent">
@@ -51,7 +52,7 @@
                                             <label class="name">
                                                 <input class="input-container" type="text" name="name">
                                                  <!-- <span class="error">*This is not a valid phone number.</span>  -->
-                                                 <div class="empty">*This field is required.</div> </label>
+                                                 <!-- <div class="empty">*This field is required.</div> </label> -->
                                             <!-- <div class="clear"></div> -->
                                         </div>
                                         <div>
@@ -93,30 +94,30 @@
                                     </div>
                                 </div>
                             </div>
-                        
-
-                        
-                
+           
                    
                         <button class="btn btn-success send-btn" type="submit" id="test">Submit form</button>
                         </fieldset> 
                     </form>
                 </div>
-         
             </div>
         </div>
 
     </main>
 
-    <footer class="text-muted">
+    <footer>
         <div class="container">
             <p class="float-right">
-                <a href="#">Back to top</a>
-            </p>
-            <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p>New to Bootstrap? <a href="{{ site.url }}/">Visit the homepage</a> or read our <a
-                    href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/">getting started
-                    guide</a>.</p>
+                <a  href="#">Back to top<img src="./img/hand.png" width="50" height="50" alt="Facebook"></a>
+          </p>
+          <p class="footer-link">
+                <a  href="index.html">Home</a>
+                <a  href="blog.html">Blog</a>
+                <a  href="contact.html">Contact</a>
+            </p>   
+           <p class="footer-link">Join us on <a href="https://www.facebook.com/profile.php?id=100011325960861" target="_blank">Facebook
+                <img src="./img/facebook.png" width="50" height="50" alt="Facebook"></a></p>
+           <p> <span>Designed by Oksana Pekach</span></p>
         </div>
     </footer>
 
@@ -128,32 +129,8 @@
 
 
     <script>
-//          $(function(){
-//             $('#link1').click(function(){
-//                 $('#link1').toggleClass('active');
-//                 $('#link2').removeClass('active');
-//                 $('#link3').removeClass('active');
-
-//             });
-//         });
-//  $(function(){
-//             $('#link2').click(function(){
-//                 $('#link2').toggleClass('active');
-//                 $('#link3').removeClass('active');
-//                 $('#link1').removeClass('active');
-//             });
-//         });
-//  $(function(){
-//             $('#link3').click(function(){
-//                 $('#link3').toggleClass('active');
-//                 $('#link2').removeClass('active');
-//                 $('#link1').removeClass('active');
-//             });
-//         });
-
         $('#test').on('click', function (e) {
             e.preventDefault();
-            // console.log('1');
             var name, phone, email, subject, message_user;
             name = $('input[name="name"]').val();
             console.log(name);
@@ -182,7 +159,6 @@
             $('input[name="email"]').val('');
             $('input[name="subject"]').val('');
             $('textarea[name="message"]').val('');
-            // $('.contact-form').reset();
         }
         )
 
