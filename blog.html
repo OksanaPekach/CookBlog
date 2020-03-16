@@ -23,8 +23,8 @@
 
         <div class="inner">
             <nav class="nav nav-masthead">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link  active" href="blog.html">Blog</a>
                 <a class="nav-link" href="contact.html">Contact</a>
             </nav>
         </div>
@@ -140,7 +140,7 @@
                     guide</a>.</p>
         </div>
     </footer>
-    <!-- 
+    
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
@@ -149,71 +149,83 @@
 
 
     <script>
-        const row = document.querySelector('#cards');
-        let url = 'http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1';
-        let p = 2;
-        function load() {
+      
+      
+        // var links = $('.nav-link');
+        // links.on('click', function() {
+        // // links.not(this).removeClass('active')
+        // $('.nav-link').addClass('active');
+        // console.log(2);
+        // });
 
-            $.ajax({
-                url: url,
-                type: 'GET'
-            })
-                .done(function (data) {
-                    //console.log(data);
-                    var res = JSON.parse(data);
+    //     $('.nav a').on('click', function() {
+    //     $('.nav a').addClass('active');
+    // });
+    //     // const row = document.querySelector('#cards');
+        // let url = 'http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=1';
+        // let p = 2;
+        // function load() {
 
-                    let template = "";
+        //     $.ajax({
+        //         url: url,
+        //         type: 'GET'
+        //     })
+        //         .done(function (data) {
+        //             //console.log(data);
+        //             var res = JSON.parse(data);
 
-                    res.results.forEach(item => {
-                        //console.dir(item);
-                        if (item.thumbnail)
-                            template +=
-                                `<div class="col-md-4">                                                                                                                               
-                                 <div class="card mb-4 shadow-sm">    
-                                 <div class="card-body"> 
-                                 <img class="foto" src="${item.thumbnail}"/>                                                                                                                                                    
-                                 <h3 class="card-text">${item.title}</h3>
-                                 <h6 class="ingrid">Ingredients :  ${item.ingredients}</h6>                                                                                                                                                       
-                                 <div class="recept"> 
-                                 <button type="button" class="btn  btn-lg btn-outline-success"> 
-                                 <a class="rec" href="${item.href}" target="_blank">Read more</a></button>                                                                                                                                                            </div>      </div>                </div>                 </div>`;
-                    })
+        //             let template = "";
 
-                    row.innerHTML = template;
+        //             res.results.forEach(item => {
+        //                 //console.dir(item);
+        //                 if (item.thumbnail)
+        //                     template +=
+        //                         `<div class="col-md-4">                                                                                                                               
+        //                          <div class="card mb-4 shadow-sm">    
+        //                          <div class="card-body"> 
+        //                          <img class="foto" src="${item.thumbnail}"/>                                                                                                                                                    
+        //                          <h3 class="card-text">${item.title}</h3>
+        //                          <h6 class="ingrid">Ingredients :  ${item.ingredients}</h6>                                                                                                                                                       
+        //                          <div class="recept"> 
+        //                          <button type="button" class="btn  btn-lg btn-outline-success"> 
+        //                          <a class="rec" href="${item.href}" target="_blank">Read more</a></button>                                                                                                                                                            </div>      </div>                </div>                 </div>`;
+        //             })
+
+        //             row.innerHTML = template;
 
 
-                })
-                .fail(function (error) {
-                    console.log(error);
-                    alert(error);
-                })
-        };
-        load();
-        $('.next').on('click', function () {
+        //         })
+        //         .fail(function (error) {
+        //             console.log(error);
+        //             alert(error);
+        //         })
+        // };
+        // load();
+        // $('.next').on('click', function () {
 
-            url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${++p}`;
-            load();
+        //     url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${++p}`;
+        //     load();
 
-            console.log(url);
-        }
-        )
+        //     console.log(url);
+        // }
+        // )
 
-        $('.prev').on('click', function () {
-            p--;
-            if (p > 0) {
-                url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${p}`;
-                load();
+        // $('.prev').on('click', function () {
+        //     p--;
+        //     if (p > 0) {
+        //         url = `http://cors-anywhere.herokuapp.com/recipepuppy.com/api/?p=${p}`;
+        //         load();
 
-                console.log(url);
+        //         console.log(url);
 
-            }
-            else p = 0;
-        }
-        )
+        //     }
+        //     else p = 0;
+        // }
+        // )
 
 
     </script>
-    <script src="mainCalc.js"></script> -->
+    <!-- <script src="mainCalc.js"></script> --> -->
 </body>
 
 </html>
