@@ -118,7 +118,7 @@ form{
 .contact-form{
     height: 100%;
     width: 100%;
-}
+ }
 .contact_title{
     border-bottom: 1px solid indianred;
 	border-top: 1px solid indianred;
@@ -126,10 +126,11 @@ form{
 .box-contact{
 background:#fff;
 width:940px;
-margin:60px auto 0;
+/* margin:60px auto 0; */
 padding: 40px 51px;
 background:#fff;
-height: 700px;
+margin: 10px;
+/* height: 700px; */
 }
 .input-container{
     border-color: #dc3545;
@@ -214,6 +215,20 @@ footer p {
      h1, .quote-block{
       font: italic 2em "Fira Sans", serif;
     }
+    .box-contact{
+        width: 100%;
+    }
+    textarea, .input-container{
+        height:auto; 
+        width: auto; 
+    }
+    .box-contact{
+        height: auto;
+        padding: 30px;
+     }
+     .transperent{
+         height: 100%;
+     }
     }
   @media (max-width: 414px) {
      .search-form{
